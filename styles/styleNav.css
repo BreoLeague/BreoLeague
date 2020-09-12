@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background: rgb(34, 34, 34);
+}
+
+.header-inicio{
+    background-image: url(../img/3shForajido.jpg);
+    height: 1000px;
+}
+.nav-inicio{
+    width: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.602);
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    width: 50%;
+    text-align: center;
+}
+.textLogo{
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 60px;
+}
+.enlaces-nav{
+    width: 50%;
+    justify-content: space-between;
+    text-align: center;
+}
+.enlaces-ul{
+    display: flex;
+    list-style: none;
+}
+.enlaces-ul li{
+    margin: 25px;
+}
+.enlaces-ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    font-family: 'Monda', sans-serif;
+    border-bottom: 2px solid transparent;
+}
+.enlaces-ul li a:hover{
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/*          NOTAS HEADER             */
+.notasHeader{
+    width: 25%;
+    height: 500px;
+    background: rgba(92, 0, 0, 0.582);
+    margin: 10px;
+}
+.textoNotasHeader{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Monda', sans-serif;
+}
