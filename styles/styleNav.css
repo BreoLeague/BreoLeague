@@ -73,6 +73,17 @@ body{
     padding: 10px;
     font-family: 'Monda', sans-serif;
 }
+/*          MenuAnimated                */
+.btn-menu{
+    display: none;
+}
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    display: none;
+}
+
 
 /*              RESPONSIVE                */
 
@@ -88,16 +99,56 @@ body{
         display: block;
     }
     .logo{
+        float: right;
         width: 80%;
+        background: rgba(0, 0, 0, 0.651);
     }
     .textLogo{
         font-size: 80px;
         text-align: left;
     }
-
-    .enlaces-nav{
-        display: none;
+    .nav-inicio{
+        position: static;
+        background: none;
     }
+    .btn-menu{
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.651);
+        font-size: 75px;
+    }
+    .icon-menu{
+        color: white;
+        cursor: pointer;
+    }
+    .icon-x{
+        display: block;
+        margin-left: 400px;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    #btn-menu:checked ~ .enlaces-nav{
+        opacity: 1;
+        visibility: visible;
+    }
+    .enlaces-nav{
+        display: inline-block;
+        background-color: rgba(17, 17, 17, 0.644);
+        width: 100%;
+        height: 80vh;
+        top: 0;left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .enlaces-ul{
+        margin: 50px;
+        width: 100%;
+        max-width: 85%;
+        display: block;
+    }
+
 }
 @media(max-width:580px){
     .header-inicio{
@@ -117,8 +168,37 @@ body{
         font-size: 50px;
         text-align: left;
     }
-
+    .btn-menu{
+        font-size: 46px;
+    }
+    .icon-menu{
+        color: white;
+        cursor: pointer;
+    }
+    .icon-x{
+        display: block;
+        margin-left: 400px;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    #btn-menu:checked ~ .enlaces-nav{
+        opacity: 1;
+        visibility: visible;
+    }
     .enlaces-nav{
-        display: none;
+        display: inline-block;
+        background-color: rgba(17, 17, 17, 0.644);
+        width: 100%;
+        height: 60vh;
+        top: 0;left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .enlaces-ul{
+        margin: 50px;
+        width: 100%;
+        max-width: 85%;
+        display: block;
     }
 }
