@@ -41,6 +41,21 @@ p{
         height: 850px;
     }
 }
-@media(max-width:380px){
-    
+@media(max-width:580px){
+    .blackSpace{
+        height: 90px;
+    }
+    .notaBlack{
+        margin: 8px;
+    }
+    .sectionIni{
+        background-size: 1500px auto;
+        background-repeat: no-repeat;
+        background-position: -550px 0px;
+        height: 850px;
+    }
+    .blockTransparent1{
+        width: 100%;
+        height: 850px;
+    }
 }
