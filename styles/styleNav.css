@@ -12,13 +12,14 @@ body{
 }
 
 .header-inicio{
+    width: 100%;
     background-image: url(../img/3shForajido.jpg);
     height: 1000px;
 }
 .nav-inicio{
     width: 100%;
     display: flex;
-    background: rgba(0, 0, 0, 0.602);
+    background: rgba(0, 0, 0, 0.671);
     position: sticky;
     top: 0px;
 }
@@ -61,8 +62,8 @@ body{
 .notasHeader{
     width: 25%;
     height: 500px;
-    background: rgba(92, 0, 0, 0.582);
-    margin: 10px;
+    background: rgba(95, 0, 0, 0.5);
+    margin: 40px;
 }
 .textoNotasHeader{
     font-size: 25px;
@@ -71,4 +72,52 @@ body{
     margin: 20px;
     padding: 10px;
     font-family: 'Monda', sans-serif;
+}
+
+/*              RESPONSIVE                */
+
+@media(max-width:840px){
+    .header-inicio{
+        background-image: url(../img/asheForajida.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+    .notasHeader{display: none;}
+    .nav-inicio{
+        display: block;
+    }
+    .logo{
+        width: 80%;
+    }
+    .textLogo{
+        font-size: 100px;
+        text-align: left;
+    }
+
+    .enlaces-nav{
+        display: none;
+    }
+}
+@media(max-width:380px){
+    .header-inicio{
+        background-image: url(../img/asheForajida.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    .notasHeader{display: none;}
+    .nav-inicio{
+        display: block;
+    }
+    .logo{
+        width: 80%;
+    }
+    .textLogo{
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .enlaces-nav{
+        display: none;
+    }
 }
